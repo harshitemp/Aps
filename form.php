@@ -1,9 +1,4 @@
-<?php 
-$userid='';
-$password='';
-$disiplay_text='';
-if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']))
-{
+
   $connetct=new mysqli ('localhost','root','','hms') or die('connection_failed :'.mysqli_connect_error());
   if(isset($_POST['userid'])&&isset($_POST['password']))
   {
